@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tandent-alibagu.vercel.app/sitemap.xml
