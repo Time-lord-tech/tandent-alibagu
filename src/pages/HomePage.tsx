@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import {
-  Stethoscope, Phone, MapPin, Clock, ChevronDown, ArrowRight,
+  Phone, MapPin, Clock, ChevronDown, ArrowRight,
   Star, Sparkles, Menu, X, MessageCircle, Calendar
 } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -126,7 +126,9 @@ function Navbar() {
       <header className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <div className={`nav-inner ${glassClass}`}>
           <a href="/" className="nav-logo">
-            <div className="nav-logo-icon"><Stethoscope size={18} /></div>
+            <div className="nav-logo-icon" style={{ overflow: 'hidden', background: 'none' }}>
+              <img src="/assets/logo-tandent.jpg" alt="TanDent Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
             <div className="nav-logo-text">
               <span style={{ color: logoColor }}>TanDent</span>
               <span style={{ color: textColor }}>Dental Clinic</span>

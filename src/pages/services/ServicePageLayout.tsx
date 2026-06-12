@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Phone, MessageCircle, Calendar, Home, ArrowLeft, Stethoscope, MapPin } from 'lucide-react';
+import { Phone, MessageCircle, Calendar, Home, ArrowLeft, MapPin } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export const CTA_BOOK = 'https://dental.m.mymedsph.app/dental/qpEhpCl8?fbclid=IwY2xjawSWfNhleHRuA2FlbQIxMABicmlkETFIOENFQlg4ZzhqT09IWTBac3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHuplwbG43qtZqJ-8ydwm5YE34Jj7eYaZttMv5mbfaEN8MWWrgg_vUIVowdbg_aem_B4e99LJO2tR4bQck1l7M4w';
@@ -38,7 +38,9 @@ function ServiceNavbar() {
     <header className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className={`nav-inner ${scrolled ? 'glass-dark' : ''}`}>
         <button className="nav-logo" onClick={() => navigate('/')} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-          <div className="nav-logo-icon"><Stethoscope size={18} /></div>
+          <div className="nav-logo-icon" style={{ overflow: 'hidden', background: 'none' }}>
+            <img src="/assets/logo-tandent.jpg" alt="TanDent Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
           <div className="nav-logo-text">
             <span style={{ color: '#ffffff' }}>TanDent</span>
             <span style={{ color: 'rgba(255,255,255,0.6)' }}>Dental Clinic</span>
