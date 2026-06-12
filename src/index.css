@@ -1379,7 +1379,43 @@ textarea.form-input {
 /* ─── Responsive ─── */
 @media (max-width: 1024px) {
   .ghost-side {
+    display: flex !important;
+    gap: 0.75rem;
+  }
+
+  .ghost-side--left {
+    left: 0.35rem;
+  }
+
+  .ghost-side--right {
+    right: 0.35rem;
+  }
+
+  .ghost-pill {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  }
+
+  .ghost-pill span {
     display: none !important;
+  }
+
+  section.service-detail-hero {
+    padding: 0 !important;
+  }
+
+  .service-detail-hero-content {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .service-body {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
   }
 
   .about-inner {
@@ -2089,48 +2125,6 @@ textarea.form-input {
 
   .hero-cta-strip-label {
     text-align: center;
-  }
-
-  /* Make Ghost Side Buttons smaller but keep on sides */
-  .ghost-side {
-    padding: 0;
-    gap: 0.5rem;
-  }
-  
-  .ghost-side--left {
-    left: 0.5rem;
-  }
-
-  .ghost-side--right {
-    right: 0.5rem;
-  }
-
-  .ghost-pill {
-    width: 2.5rem;
-    height: 3.5rem;
-    padding: 0;
-    background: rgba(255, 255, 255, 0.15); /* Keep it highly transparent */
-    backdrop-filter: blur(8px);
-    border-radius: var(--radius-sm) !important;
-  }
-  
-  .ghost-side--left .ghost-pill {
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
-  }
-
-  .ghost-side--right .ghost-pill {
-    border-radius: var(--radius-sm) 0 0 var(--radius-sm) !important;
-  }
-  
-  .ghost-pill span {
-    display: block; /* Restore the text! */
-    font-size: 0.55rem;
-  }
-
-  .ghost-pill:hover, .ghost-pill:active {
-    background: rgba(255, 255, 255, 0.25) !important;
-    transform: scale(0.95);
-    color: var(--white);
   }
 
   /* Ensure body has padding so content isn't hidden behind the sticky bottom bar */
