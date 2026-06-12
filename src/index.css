@@ -1378,6 +1378,10 @@ textarea.form-input {
 
 /* ─── Responsive ─── */
 @media (max-width: 1024px) {
+  .ghost-side {
+    display: none !important;
+  }
+
   .about-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
