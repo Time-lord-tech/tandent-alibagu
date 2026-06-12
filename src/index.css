@@ -2045,6 +2045,11 @@ textarea.form-input {
   section {
     padding: 4rem 1.5rem !important;
   }
+
+  section.services-sticky {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   
   .about-text-panel {
     padding: 3rem 1.5rem;
