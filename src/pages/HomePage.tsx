@@ -561,7 +561,7 @@ function CtaBanner() {
         <p>Walk in with fear, walk out with a plan. No pressure, no judgment — just honest, affordable dentistry.</p>
         <div className="hero-actions" style={{ justifyContent: 'center' }}>
           <a href={CTA_BOOK} target="_blank" rel="noreferrer" className="btn-primary">Book Online Now <ArrowRight size={16} /></a>
-          <a href="#contact" className="btn-ghost" style={{ background: 'rgba(0,0,0,0.1)', color: 'var(--charcoal)', padding: '1rem 2rem', borderRadius: 'var(--radius-xl)' }}>Send an Inquiry</a>
+          <a href="#contact" className="btn-ghost" style={{ background: 'rgba(255,255,255,0.1)', color: 'white', border: '1px solid rgba(255,255,255,0.2)', padding: '1rem 2rem', borderRadius: 'var(--radius-xl)' }}>Send an Inquiry</a>
         </div>
       </motion.div>
     </div>
